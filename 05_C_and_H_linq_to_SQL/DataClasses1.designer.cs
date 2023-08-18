@@ -42,7 +42,7 @@ namespace linq_to_SQL
     #endregion
 		
 		public LibraryDbContext() : 
-				base(global::linq_to_SQL.Properties.Settings.Default.LibraryConnectionString, mappingSource)
+				base(global::linq_to_SQL.Properties.Settings.LibraryConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

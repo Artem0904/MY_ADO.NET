@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_C_disconn_mode_sales", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_C_dataset_Users", "04_dataset_Users\04_C_dataset_Users.csproj", "{BDEC13E8-C2E0-4881-8839-AF78B225108D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_C_and_H_linq_to_SQL", "05_C_and_H_linq_to_SQL\05_C_and_H_linq_to_SQL.csproj", "{BD325341-C0C7-4AEF-8952-39D8D367675A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_C_EntityFramework_MusicApp", "..\06_C_EntityFramework_MusicApp\06_C_EntityFramework_MusicApp.csproj", "{E83671D8-33D7-4C41-A5AD-3CE6D5786F08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{BDEC13E8-C2E0-4881-8839-AF78B225108D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDEC13E8-C2E0-4881-8839-AF78B225108D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDEC13E8-C2E0-4881-8839-AF78B225108D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD325341-C0C7-4AEF-8952-39D8D367675A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD325341-C0C7-4AEF-8952-39D8D367675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD325341-C0C7-4AEF-8952-39D8D367675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD325341-C0C7-4AEF-8952-39D8D367675A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83671D8-33D7-4C41-A5AD-3CE6D5786F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83671D8-33D7-4C41-A5AD-3CE6D5786F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83671D8-33D7-4C41-A5AD-3CE6D5786F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83671D8-33D7-4C41-A5AD-3CE6D5786F08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
