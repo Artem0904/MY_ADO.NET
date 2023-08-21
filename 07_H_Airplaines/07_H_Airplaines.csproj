@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0A9929E-0527-4C02-A8AB-41A6823F8784}</ProjectGuid>
+    <ProjectGuid>{C2495E94-8FFA-4E2A-A387-FDF4DFD4163A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_06_C_EntityFramework_MusicApp</RootNamespace>
-    <AssemblyName>_06_C_EntityFramework_MusicApp</AssemblyName>
+    <RootNamespace>_07_H_Airplaines</RootNamespace>
+    <AssemblyName>07_H_Airplaines</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

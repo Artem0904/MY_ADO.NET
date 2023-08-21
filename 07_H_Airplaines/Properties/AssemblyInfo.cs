@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("06_C_EntityFramework_MusicApp")]
+[assembly: AssemblyTitle("07_H_Airplaines")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("06_C_EntityFramework_MusicApp")]
+[assembly: AssemblyProduct("07_H_Airplaines")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d0a9929e-0527-4c02-a8ab-41a6823f8784")]
+[assembly: Guid("c2495e94-8ffa-4e2a-a387-fdf4dfd4163a")]
 
 // Version information for an assembly consists of the following four values:
 //
