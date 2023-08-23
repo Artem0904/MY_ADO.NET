@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Product> Product { get; set; } = new HashSet<Product>();
+        public virtual ICollection<Product> Products { get; set; } = new HashSet<Product>();
     }
 }

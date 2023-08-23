@@ -1,4 +1,4 @@
-﻿namespace _08_C_dataAnotations_Shop.Entities
+﻿namespace _08_C_dataAnotations_Shop
 {
     public class Shop
     {
@@ -8,7 +8,7 @@
         public int? ParkingArea { get; set; }
         public int CityId { get; set; }
         public City City { get; set; }
-        public virtual ICollection<Product> Product { get; set; } = new HashSet<Product>();
+        public virtual ICollection<Product> Products { get; set; } = new HashSet<Product>();
         public virtual ICollection<Worker> Workers { get; set; } = new HashSet<Worker>();
 
     }

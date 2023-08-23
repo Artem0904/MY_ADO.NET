@@ -11,5 +11,8 @@
         public int PositionId { get; set; }
         public int ShopId { get; set; }
 
+        public Position Position { get; set; }
+        public Shop Shop { get; set; }
+
     }
 }
