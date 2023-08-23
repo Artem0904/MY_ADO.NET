@@ -1,6 +1,4 @@
-﻿using _08_C_dataAnotations_Shop.Entities;
-
-namespace _08_C_dataAnotations_Shop
+﻿namespace _08_C_dataAnotations_Shop.Entities
 {
     public class Product
     {

@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_C_dataset_Users", "04_da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_C_EntityFramework_MusicApp", "06_C_EntityFramework_MusicApp1\06_C_EntityFramework_MusicApp.csproj", "{DA4DA00A-F3F0-4EE7-903F-2FE88E9DE257}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_H_Airplaines", "07_H_Airplaines\07_H_Airplaines.csproj", "{C2495E94-8FFA-4E2A-A387-FDF4DFD4163A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_H_Airlaines", "07_H_Airplaines\07_H_Airlaines.csproj", "{C2495E94-8FFA-4E2A-A387-FDF4DFD4163A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_C_dataAnotations_Shop", "08_C_dataAnotations_Shop\08_C_dataAnotations_Shop.csproj", "{684870A0-7468-4A1C-A5E5-F750E3B60495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_C_dataAnotations_Shop", "08_C_dataAnotations_Shop\08_C_dataAnotations_Shop.csproj", "{684870A0-7468-4A1C-A5E5-F750E3B60495}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

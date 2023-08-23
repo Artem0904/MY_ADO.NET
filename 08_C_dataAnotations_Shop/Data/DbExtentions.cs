@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _08_C_dataAnotations_Shop
+namespace _08_C_dataAnotations_Shop.Data
 {
     internal static class DbExtentions
     {
