@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_H_Airlaines", "07_H_Airp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_C_dataAnotations_Shop", "08_C_dataAnotations_Shop\08_C_dataAnotations_Shop.csproj", "{684870A0-7468-4A1C-A5E5-F750E3B60495}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_CourseProj", "09_CourseProj", "{07921D90-35A4-498C-A735-BD0EE42F33B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel", "Hotel\Hotel.csproj", "{47D5B3D4-4901-4D38-BDCA-5F0289701A78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,9 +61,16 @@ Global
 		{684870A0-7468-4A1C-A5E5-F750E3B60495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{684870A0-7468-4A1C-A5E5-F750E3B60495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{684870A0-7468-4A1C-A5E5-F750E3B60495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D5B3D4-4901-4D38-BDCA-5F0289701A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D5B3D4-4901-4D38-BDCA-5F0289701A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D5B3D4-4901-4D38-BDCA-5F0289701A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D5B3D4-4901-4D38-BDCA-5F0289701A78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47D5B3D4-4901-4D38-BDCA-5F0289701A78} = {07921D90-35A4-498C-A735-BD0EE42F33B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3096AE03-C68C-42F3-A50B-A85A76310FD2}
