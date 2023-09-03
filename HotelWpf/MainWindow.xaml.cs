@@ -110,6 +110,7 @@ namespace HotelWpf
                         HotelRoomNum = x.HotelRoom.Number
                     });
                     break;
+
                 default: 
                     break;
             }
