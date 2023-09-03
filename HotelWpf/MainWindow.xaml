@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:HotelWpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
-</Window>
+    <DockPanel>
+            <ToolBar DockPanel.Dock="Top">
+                <Button Click="Load_Click">Load</Button>
+                <!--<Button Click="Update_Click">Update</Button>-->
+                <ComboBox x:Name="TablesComboBox" Width="100">
+                    <ComboBoxItem Content="Hotels"/>
+                    <ComboBoxItem Content="HotelRooms"/>
+                    <ComboBoxItem Content="Employees"/>
+                    <ComboBoxItem Content="Visitors"/>
+                    <ComboBoxItem Content="Positions"/>
+                    <ComboBoxItem Content="Countries"/>
+                    <ComboBoxItem Content="Cities"/>
+                </ComboBox>
+            </ToolBar>
+            <DataGrid x:Name="tableView"></DataGrid>
+        </DockPanel>
+</Window> 
