@@ -1,10 +1,5 @@
 ﻿using HotelDb.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HotelDb.Data.Configurations
 {
@@ -12,7 +7,7 @@ namespace HotelDb.Data.Configurations
     {
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<City> builder)
         {
-            builder.HasKey(x => x.Id).HasName("Cities");
+            builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasMaxLength(200).IsRequired();
 
             builder.HasMany(x => x.Hotels).WithOne(x => x.City).HasForeignKey(x => x.CityId);

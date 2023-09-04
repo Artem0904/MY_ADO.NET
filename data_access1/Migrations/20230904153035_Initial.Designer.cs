@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace data_access1.Migrations
 {
     [DbContext(typeof(HotelDbContext))]
-    [Migration("20230903073915_Initial")]
+    [Migration("20230904153035_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -40,12 +40,31 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Cities");
+                    b.HasKey("Id");
 
                     b.HasIndex("CountryId");
 
                     b.ToTable("Cities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CountryId = 1,
+                            Name = "Rivne"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CountryId = 2,
+                            Name = "Berlin"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CountryId = 3,
+                            Name = "Paris"
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.Country", b =>
@@ -61,10 +80,31 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Countries");
+                    b.HasKey("Id");
 
                     b.ToTable("Countries");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Ukraine"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Germany"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "France"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "USA"
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.Employee", b =>
@@ -104,14 +144,48 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Employees");
+                    b.HasKey("Id");
 
                     b.HasIndex("HotelId");
 
                     b.HasIndex("PositionId");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Gmail = "roberto1237@gmil.com",
+                            HotelId = 1,
+                            Name = "Robert",
+                            PhoneNumber = "+380 97 077 2533",
+                            PositionId = 1,
+                            Salary = 3000m,
+                            Surname = "Robertov"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Gmail = "vika17@gmil.com",
+                            HotelId = 1,
+                            Name = "Vika",
+                            PhoneNumber = "+380 97 707 2323",
+                            PositionId = 2,
+                            Salary = 2000m,
+                            Surname = "Vivikivna"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Gmail = "danyil32@gmil.com",
+                            HotelId = 1,
+                            Name = "Danya",
+                            PhoneNumber = "+380 97 036 2632",
+                            PositionId = 3,
+                            Salary = 1000m,
+                            Surname = "Dayiilovich"
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.Hotel", b =>
@@ -151,12 +225,46 @@ namespace data_access1.Migrations
                     b.Property<int>("Stars")
                         .HasColumnType("int");
 
-                    b.HasKey("Id")
-                        .HasName("Hotels");
+                    b.HasKey("Id");
 
                     b.HasIndex("CityId");
 
                     b.ToTable("Hotels");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Adress = "Sun 12a",
+                            CityId = 1,
+                            ContactNumber = "+380 97 234 1267",
+                            CountHotelRooms = 100,
+                            Description = "Cool hotel, 5 stars",
+                            Name = "SunSet",
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Adress = "Sunny 18a",
+                            CityId = 2,
+                            ContactNumber = "+380 68 274 1247",
+                            CountHotelRooms = 70,
+                            Description = "Cool service, 4 stars",
+                            Name = "SunRise",
+                            Stars = 4
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Adress = "Moon 12a",
+                            CityId = 3,
+                            ContactNumber = "+380 44 224 6061",
+                            CountHotelRooms = 120,
+                            Description = "Great hotel, 5 stars",
+                            Name = "MoonRise",
+                            Stars = 5
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.HotelRoom", b =>
@@ -182,12 +290,40 @@ namespace data_access1.Migrations
                     b.Property<decimal>("PriceForDay")
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("Id")
-                        .HasName("HotelRooms");
+                    b.HasKey("Id");
 
                     b.HasIndex("HotelId");
 
                     b.ToTable("HotelRooms");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CountVisitors = 3,
+                            HotelId = 1,
+                            IsVip = true,
+                            Number = 1,
+                            PriceForDay = 100m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CountVisitors = 2,
+                            HotelId = 1,
+                            IsVip = false,
+                            Number = 2,
+                            PriceForDay = 50m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CountVisitors = 1,
+                            HotelId = 1,
+                            IsVip = false,
+                            Number = 3,
+                            PriceForDay = 30m
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.Position", b =>
@@ -203,10 +339,26 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Positions");
+                    b.HasKey("Id");
 
                     b.ToTable("Positions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Boss"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Manager"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Doorman"
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.Visitor", b =>
@@ -235,12 +387,37 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Visitors");
+                    b.HasKey("Id");
 
                     b.HasIndex("HotelRoomId");
 
                     b.ToTable("Visitors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            HotelRoomId = 1,
+                            Name = "Den",
+                            PhoneNumber = "+380 97 354 1278",
+                            Surname = "Deniv"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            HotelRoomId = 2,
+                            Name = "Vlad",
+                            PhoneNumber = "+380 68 250 2228",
+                            Surname = "Vladov"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            HotelRoomId = 3,
+                            Name = "Gill",
+                            PhoneNumber = "+380 97 574 2118",
+                            Surname = "Gillov"
+                        });
                 });
 
             modelBuilder.Entity("HotelDb.Entities.City", b =>

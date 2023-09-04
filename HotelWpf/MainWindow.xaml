@@ -9,7 +9,8 @@
 
     <DockPanel>
             <ToolBar DockPanel.Dock="Top">
-                <Button Click="Load_Click">Load</Button>
+                <Button Click="Exit_Click" Width="50" Margin="5">Exit</Button>
+            <Button Click="Load_Click" Width="50" Margin="5">Load</Button>
                 <!--<Button Click="Update_Click">Update</Button>-->
                 <ComboBox x:Name="TablesComboBox" Width="100">
                     <ComboBoxItem Content="Hotels"/>
@@ -20,7 +21,7 @@
                     <ComboBoxItem Content="Countries"/>
                     <ComboBoxItem Content="Cities"/>
                 </ComboBox>
-            </ToolBar>
+        </ToolBar>
             <DataGrid x:Name="tableView"></DataGrid>
         </DockPanel>
 </Window> 

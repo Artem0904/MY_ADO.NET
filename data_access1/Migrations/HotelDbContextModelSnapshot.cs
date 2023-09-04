@@ -37,8 +37,7 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Cities");
+                    b.HasKey("Id");
 
                     b.HasIndex("CountryId");
 
@@ -78,8 +77,7 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Countries");
+                    b.HasKey("Id");
 
                     b.ToTable("Countries");
 
@@ -98,6 +96,11 @@ namespace data_access1.Migrations
                         {
                             Id = 3,
                             Name = "France"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "USA"
                         });
                 });
 
@@ -138,8 +141,7 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Employees");
+                    b.HasKey("Id");
 
                     b.HasIndex("HotelId");
 
@@ -220,8 +222,7 @@ namespace data_access1.Migrations
                     b.Property<int>("Stars")
                         .HasColumnType("int");
 
-                    b.HasKey("Id")
-                        .HasName("Hotels");
+                    b.HasKey("Id");
 
                     b.HasIndex("CityId");
 
@@ -286,8 +287,7 @@ namespace data_access1.Migrations
                     b.Property<decimal>("PriceForDay")
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("Id")
-                        .HasName("HotelRooms");
+                    b.HasKey("Id");
 
                     b.HasIndex("HotelId");
 
@@ -336,8 +336,7 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Positions");
+                    b.HasKey("Id");
 
                     b.ToTable("Positions");
 
@@ -385,8 +384,7 @@ namespace data_access1.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.HasKey("Id")
-                        .HasName("Visitors");
+                    b.HasKey("Id");
 
                     b.HasIndex("HotelRoomId");
 

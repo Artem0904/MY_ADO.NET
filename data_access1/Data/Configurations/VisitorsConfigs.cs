@@ -13,7 +13,7 @@ namespace HotelDb.Data.Configurations
 
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Visitor> builder)
         {
-            builder.HasKey(x => x.Id).HasName("Visitors");
+            builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasMaxLength(200).IsRequired();
             builder.Property(x => x.Surname).HasMaxLength(200).IsRequired();
             builder.Property(x => x.PhoneNumber).HasMaxLength(200).IsRequired();
